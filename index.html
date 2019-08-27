@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>히뮤 애스크</title>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue"
+    integrity="sha384-8t+aLluUVnn5SPPG/NbeZCH6TWIvaXIm/gDbutRvtEeElzxxWaZN+G/ZIEdI/f+y"
+    crossorigin="anonymous"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-firestore.js"></script>
+
+  <script src="semantic/dist/semantic.min.js"></script>
+  <script src="javascripts/moment.js"></script>
+  <script src="javascripts/particles.min.js"></script>
+  <script src="javascripts/hashes.min.js"></script>
+  <script src="javascripts/main.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+</head>
+
+<body>
+  <div class="hiu section full" id="first">
+    <div id="particles-js"></div>
+    <div class="ui container">
+      <div class="ui form" id="question_form">
+        <div class="field">
+          <textarea v-model="question" @input="update_question" id="question_text"
+            placeholder="히뮤에게 질문을 남기세요!"></textarea>
+        </div>
+        <div class="ui error message">
+          <div class="header">질문 제출 실패</div>
+          <p>질문 내용은 공백이거나, 140자를 넘길 수 없습니다.</p>
+        </div>
+        <div class="ui success message">
+          <div class="header">질문 완료</div>
+          <p>질문 제출이 성공적으로 완료되었어요!</p>
+        </div>
+        <button class="ui basic fluid button" @click="submit_question">
+          <i class="paper plane icon"></i>
+          질문 제출하기 (0/140자)
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="hiu section full" id="second">
+    <div class="ui container" id="answer_container">
+      <div class="ui vertical segment" v-for="element in question_list">
+        <div class="ui medium header">
+          {{ element.content }}
+          <div class="sub header">{{ element.timestamp }}</div>
+        </div>
+        <p>
+          <i class="paper plane icon" v-if="element.isAnswered"></i>
+          <i class="paper plane outline icon" v-else></i>
+          {{ element.answer }}
+        </p>
+      </div>
+      <p v-if="question_list.length == 0"
+        style="width:100%;padding:0;margin-right:0;margin-top:1rem;opacity:0.5;text-align:center;font-family:'Raleway','Noto Sans KR',sans-serif;">
+        아직 질문이 없어요... 어서
+        질문해주세요!</p>
+    </div>
+  </div>
+</body>

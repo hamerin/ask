@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700&display=swap");
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Raleway", "Noto Sans KR", sans-serif !important; }
+
+body.c1 #first {
+  background-color: #404759; }
+body.c1 #answer_container i.icon {
+  color: #404759; }
+
+body.c2 #first {
+  background-color: #467f8c; }
+body.c2 #answer_container i.icon {
+  color: #467f8c; }
+
+body.c3 #first {
+  background-color: #f2dd72; }
+body.c3 #answer_container i.icon {
+  color: #f2dd72; }
+
+body.c4 #first {
+  background-color: #f2bbbb; }
+body.c4 #answer_container i.icon {
+  color: #f2bbbb; }
+
+#particles-js {
+  position: absolute;
+  height: 100%;
+  width: 100%; }
+
+#first,
+#second {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+#first {
+  position: relative; }
+  #first .ui.container {
+    width: 80% !important; }
+    #first .ui.container .ui.form#question_form {
+      width: 100%;
+      padding: 3rem;
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      font-family: "Raleway", "Noto Sans KR", sans-serif !important; }
+      #first .ui.container .ui.form#question_form .ui.message > * {
+        font-family: "Raleway", "Noto Sans KR", sans-serif !important; }
+      #first .ui.container .ui.form#question_form textarea {
+        background: transparent !important; }
+      #first .ui.container .ui.form#question_form button,
+      #first .ui.container .ui.form#question_form textarea {
+        font-family: inherit !important; }
+
+#second {
+  background-color: white; }
+  #second .ui.container {
+    width: 80% !important; }
+
+#answer_container {
+  padding: 3rem 0; }
+  #answer_container .ui.segment {
+    padding: 3em 0 0 0; }
+    #answer_container .ui.segment .ui.medium.header {
+      font-weight: 500;
+      font-family: "Raleway", "Noto Sans KR", sans-serif !important; }
+    #answer_container .ui.segment p {
+      font-weight: 400;
+      margin-bottom: 1em !important; }
+  #answer_container .ui.vertical.segment:first-child {
+    padding-top: 0; }
+  #answer_container .ui.vertical.segment:last-child {
+    border-bottom: 1px solid rgba(34, 36, 38, 0.15); }
+
+.hiu.section {
+  width: 100%; }
+  .hiu.section.full {
+    min-height: 100vh; }
+  .hiu.section.half {
+    min-height: 50vh; }
+  .hiu.section.quarter {
+    min-height: 25vh; }
+  .hiu.section.half.quarter {
+    min-height: 75vh; }
+
+/*# sourceMappingURL=style.css.map */

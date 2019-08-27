@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700&display=swap');
+
+$colors: (#404759, #467f8c, #f2dd72, #f2bbbb);
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Raleway", "Noto Sans KR", sans-serif !important;
+}
+
+@for $i from 1 through 4 {
+  $color: nth($list: $colors, $n: $i);
+
+  body.c#{$i} {
+    #first {
+      background-color: $color;
+    }
+
+    #answer_container i.icon {
+      color: $color;
+    }
+  }
+}
+
+#particles-js {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+#first,
+#second {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#first {
+  position: relative;
+
+  .ui.container {
+    width: 80% !important;
+
+    .ui.form#question_form {
+      width: 100%;
+      padding: 3rem;
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      font-family: "Raleway", "Noto Sans KR", sans-serif !important;
+
+      .ui.message>* {
+        font-family: "Raleway", "Noto Sans KR", sans-serif !important;
+      }
+
+      textarea {
+        background: transparent !important;
+      }
+
+      button,
+      textarea {
+        font-family: inherit !important;
+      }
+    }
+  }
+}
+
+#second {
+  background-color: white;
+
+  .ui.container {
+    width: 80% !important;
+  }
+}
+
+#answer_container {
+  padding: 3rem 0;
+
+  .ui.segment {
+    padding: 3em 0 0 0;
+
+    .ui.medium.header {
+      font-weight: 500;
+      font-family: "Raleway", "Noto Sans KR", sans-serif !important;
+    }
+
+    p {
+      font-weight: 400;
+      margin-bottom: 1em !important;
+    }
+  }
+
+  .ui.vertical.segment:first-child {
+    padding-top: 0;
+  }
+
+  .ui.vertical.segment:last-child {
+    border-bottom: 1px solid rgba(34, 36, 38, .15);
+  }
+}
+
+.hiu.section {
+  width: 100%;
+
+  &.full {
+    min-height: 100vh;
+  }
+
+  &.half {
+    min-height: 50vh;
+  }
+
+  &.quarter {
+    min-height: 25vh;
+  }
+
+  &.half.quarter {
+    min-height: 75vh;
+  }
+}
