@@ -4,7 +4,8 @@ body,
 html {
   height: 100%;
   margin: 0;
-  font-family: "Raleway", "Noto Sans KR", sans-serif !important; }
+  font-family: "Raleway", "Noto Sans KR", sans-serif !important;
+  letter-spacing: -0.08ch !important; }
 
 body.c1 #first {
   background-color: #404759; }
@@ -26,6 +27,16 @@ body.c4 #first {
 body.c4 #answer_container i.icon {
   color: #f2bbbb; }
 
+body.c5 #first {
+  background-color: #c0ffee; }
+body.c5 #answer_container i.icon {
+  color: #c0ffee; }
+
+body.c6 #first {
+  background-color: #005daa; }
+body.c6 #answer_container i.icon {
+  color: #005daa; }
+
 #particles-js {
   position: absolute;
   height: 100%;
@@ -46,14 +57,17 @@ body.c4 #answer_container i.icon {
       padding: 3rem;
       background-color: white;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      font-family: "Raleway", "Noto Sans KR", sans-serif !important; }
+      font-family: "Raleway", "Noto Sans KR", sans-serif !important;
+      letter-spacing: -0.08ch !important; }
       #first .ui.container .ui.form#question_form .ui.message > * {
-        font-family: "Raleway", "Noto Sans KR", sans-serif !important; }
+        font-family: "Raleway", "Noto Sans KR", sans-serif !important;
+        letter-spacing: inherit !important; }
       #first .ui.container .ui.form#question_form textarea {
         background: transparent !important; }
       #first .ui.container .ui.form#question_form button,
       #first .ui.container .ui.form#question_form textarea {
-        font-family: inherit !important; }
+        font-family: inherit !important;
+        letter-spacing: inherit !important; }
 
 #second {
   background-color: white; }

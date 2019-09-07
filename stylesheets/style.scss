@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700&display=swap');
 
-$colors: (#404759, #467f8c, #f2dd72, #f2bbbb);
+$colors: (#404759, #467f8c, #f2dd72, #f2bbbb, #c0ffee, #005daa);
 
 body,
 html {
   height: 100%;
   margin: 0;
   font-family: "Raleway", "Noto Sans KR", sans-serif !important;
+  letter-spacing: -0.08ch !important;
 }
 
-@for $i from 1 through 4 {
+@for $i from 1 through 6 {
   $color: nth($list: $colors, $n: $i);
 
   body.c#{$i} {
@@ -49,9 +50,11 @@ html {
       background-color: white;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       font-family: "Raleway", "Noto Sans KR", sans-serif !important;
+      letter-spacing: -0.08ch !important;
 
       .ui.message>* {
         font-family: "Raleway", "Noto Sans KR", sans-serif !important;
+        letter-spacing: inherit !important;
       }
 
       textarea {
@@ -61,6 +64,7 @@ html {
       button,
       textarea {
         font-family: inherit !important;
+        letter-spacing: inherit !important;
       }
     }
   }

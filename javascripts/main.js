@@ -15,7 +15,7 @@ function randInt(from, to) {
 }
 
 $(document).ready(function () {
-  $("body").addClass(`c${randInt(1, 4).toString()}`)
+  $("body").addClass(`c${randInt(1, 6).toString()}`)
 
   particlesJS.load('particles-js', 'assets/particles.json', function () {
     let SHA256 = new Hashes.SHA256;
