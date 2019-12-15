@@ -37,6 +37,31 @@ body.c6 #first {
 body.c6 #answer_container i.icon {
   color: #005daa; }
 
+body.c7 #first {
+  background-color: #ab94fc; }
+body.c7 #answer_container i.icon {
+  color: #ab94fc; }
+
+body.c8 #first {
+  background-color: #abcdef; }
+body.c8 #answer_container i.icon {
+  color: #abcdef; }
+
+body.c9 #first {
+  background-color: #c7e2cf; }
+body.c9 #answer_container i.icon {
+  color: #c7e2cf; }
+
+body.c10 #first {
+  background-color: #c4beef; }
+body.c10 #answer_container i.icon {
+  color: #c4beef; }
+
+body.c11 #first {
+  background-color: #ef4b3f; }
+body.c11 #answer_container i.icon {
+  color: #ef4b3f; }
+
 #particles-js {
   position: absolute;
   height: 100%;

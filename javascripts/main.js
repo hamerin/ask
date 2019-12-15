@@ -15,7 +15,7 @@ function randInt(from, to) {
 }
 
 $(document).ready(function () {
-  $("body").addClass(`c${randInt(1, 6).toString()}`)
+  $("body").addClass(`c${randInt(1, 11).toString()}`)
 
   particlesJS.load('particles-js', 'assets/particles.json', function () {
     let SHA256 = new Hashes.SHA256;
@@ -73,7 +73,8 @@ $(document).ready(function () {
     let vue_list = new Vue({
       el: '#answer_container',
       data: {
-        question_list: []
+        question_list: [],
+        flag: false
       }
     });
 
@@ -87,6 +88,7 @@ $(document).ready(function () {
         results.forEach(element => {
           vue_list.question_list.push(element.data());
         });
+        vue_list.flag = true;
       });
     });
   });
