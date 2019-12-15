@@ -28,9 +28,9 @@ body.c4 #answer_container i.icon {
   color: #f2bbbb; }
 
 body.c5 #first {
-  background-color: #c0ffee; }
+  background-color: #382f4b; }
 body.c5 #answer_container i.icon {
-  color: #c0ffee; }
+  color: #382f4b; }
 
 body.c6 #first {
   background-color: #005daa; }
@@ -61,6 +61,11 @@ body.c11 #first {
   background-color: #ef4b3f; }
 body.c11 #answer_container i.icon {
   color: #ef4b3f; }
+
+body.c12 #first {
+  background-color: #134515; }
+body.c12 #answer_container i.icon {
+  color: #134515; }
 
 #particles-js {
   position: absolute;
