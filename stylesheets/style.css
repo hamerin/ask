@@ -98,6 +98,16 @@ body.c12 #answer_container i.icon {
       #first .ui.container .ui.form#question_form textarea {
         font-family: inherit !important;
         letter-spacing: inherit !important; }
+  #first a {
+    position: absolute;
+    bottom: 32px;
+    cursor: pointer; }
+    #first a img {
+      height: 24px;
+      width: auto;
+      transition: 0.5s ease; }
+      #first a img:hover {
+        opacity: 0.8; }
 
 #second {
   background-color: white; }

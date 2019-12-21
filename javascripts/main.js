@@ -14,8 +14,21 @@ function randInt(from, to) {
   return Math.floor(Math.random() * (to - from + 1) + from);
 }
 
+
 $(document).ready(function () {
-  $("body").addClass(`c${randInt(1, 12).toString()}`)
+  const numofColor = 12;
+
+  function setColor() {
+    const bodyEl = $("body");
+    for (let i = 1; i <= numofColor; i++) {
+      let className = `c${i.toString()}`
+      if (bodyEl.hasClass(className)) bodyEl.removeClass(className);
+    }
+    bodyEl.addClass(`c${randInt(1, 12).toString()}`)
+  }
+
+  setColor();
+  $('#logo').click(setColor);
 
   particlesJS.load('particles-js', 'assets/particles.json', function () {
     let SHA256 = new Hashes.SHA256;
