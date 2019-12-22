@@ -92,6 +92,8 @@ $(document).ready(function () {
     });
 
     db.collection("Ask").onSnapshot(function (querySnapshot) {
+      vue_list.flag = false;
+
       let promises = [];
       querySnapshot.forEach(element => {
         promises.push(db.collection("Ask").doc(element.id).get());
