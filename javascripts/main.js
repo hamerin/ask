@@ -16,19 +16,27 @@ function randInt(from, to) {
 
 
 $(document).ready(function () {
-  const numofColor = 12;
+  const colorText = $("#color-changer > span")
+  const colors = ['#404759', '#467f8c', '#f2dd72', '#f2bbbb', '#382f4b', '#005daa', '#ab94fc', '#abcdef', '#c7e2cf', '#c4beef', '#ef4b3f', '#134515'];
+  let currentSelected = 0;
 
   function setColor() {
     const bodyEl = $("body");
-    for (let i = 1; i <= numofColor; i++) {
+    for (let i = 1; i <= colors.length; i++) {
       let className = `c${i.toString()}`
       if (bodyEl.hasClass(className)) bodyEl.removeClass(className);
     }
-    bodyEl.addClass(`c${randInt(1, 12).toString()}`)
+
+    let selected = randInt(1, 12);
+    while(selected == currentSelected) selected = randInt(1, 12);
+    currentSelected = selected;
+
+    bodyEl.addClass(`c${selected.toString()}`);
+    colorText.text(`✦ ${colors[selected-1].toString().slice(1)}`);
   }
 
   setColor();
-  $('#logo').click(setColor);
+  $('#color-changer').click(setColor);
 
   particlesJS.load('particles-js', 'assets/particles.json', function () {
     let SHA256 = new Hashes.SHA256;

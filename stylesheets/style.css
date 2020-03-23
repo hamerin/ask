@@ -72,6 +72,29 @@ body.c12 #answer_container i.icon {
   height: 100%;
   width: 100%; }
 
+#color-changer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+  transition: 0.1s ease; }
+  #color-changer:hover {
+    opacity: 0.85; }
+  #color-changer:active {
+    opacity: 0.7; }
+  #color-changer span {
+    margin: 10px 15px;
+    opacity: 0.8;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+    user-select: none;
+    font-weight: 500; }
+
 #first,
 #second {
   display: flex;
