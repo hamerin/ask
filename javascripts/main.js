@@ -1,11 +1,12 @@
 firebase.initializeApp({
-  apiKey: "AIzaSyBgB1D6MpNL1dSvSqbpis2ytD2MeNg9b9o",
-  authDomain: "ask-himyu-bd649.firebaseapp.com",
-  databaseURL: "https://ask-himyu-bd649.firebaseio.com",
-  projectId: "ask-himyu-bd649",
-  storageBucket: "",
-  messagingSenderId: "349705051204",
-  appId: "1:349705051204:web:2c44a638ae3740e7"
+  apiKey: "AIzaSyBezSXPBJnfO3LteDK47G8AO1anNU6_EQk",
+  authDomain: "hamerinask.firebaseapp.com",
+  databaseURL: "https://hamerinask.firebaseio.com",
+  projectId: "hamerinask",
+  storageBucket: "hamerinask.appspot.com",
+  messagingSenderId: "41818205126",
+  appId: "1:41818205126:web:ec1d6fdfb44a158ef320c7",
+  measurementId: "G-7JD8YMVR6R"
 });
 
 let db = firebase.firestore();

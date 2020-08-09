@@ -5,14 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="히뮤 애스크">
-  <meta name="twitter:image" content="https://ask.himyu.moe/images/tw-thumb.jpg">
-  <meta name="twitter:url" content="https://ask.himyu.moe">
-  <meta name="twitter:creator" content="@_himyu">
-  <meta name="twitter:site" content="@_himyu">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="하메린 애스크">
+  <meta name="twitter:creator" content="@hamerin_">
+  <meta name="twitter:site" content="@hamerin_">
 
-  <title>히뮤 애스크</title>
+  <title>하메린 애스크</title>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh"
@@ -20,8 +18,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 
-  <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-firestore.js"></script>
 
   <script src="semantic/dist/semantic.min.js"></script>
   <script src="javascripts/moment.js"></script>
@@ -41,7 +39,7 @@
       <div class="ui form" id="question_form">
         <div class="field">
           <textarea v-model="question" @input="update_question" id="question_text"
-            placeholder="히뮤에게 질문을 남기세요!"></textarea>
+            placeholder="질문을 남기세요!"></textarea>
         </div>
         <div class="ui error message">
           <div class="header">질문 제출 실패</div>
