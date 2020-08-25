@@ -39,7 +39,6 @@ $(document).ready(function () {
   $('#color-changer').click(setColor);
 
   particlesJS.load('particles-js', 'assets/particles.json', function () {
-    let SHA256 = new Hashes.SHA256;
     let vue_ask = new Vue({
       el: '#question_form',
       data: {
