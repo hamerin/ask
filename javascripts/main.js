@@ -15,7 +15,6 @@ function randInt(from, to) {
   return Math.floor(Math.random() * (to - from + 1) + from);
 }
 
-
 $(document).ready(function () {
   const colorText = $("#color-changer > span")
   const colors = ['#404759', '#467f8c', '#f2dd72', '#f2bbbb', '#382f4b', '#005daa', '#ab94fc', '#abcdef', '#c7e2cf', '#c4beef', '#ef4b3f', '#134515'];
